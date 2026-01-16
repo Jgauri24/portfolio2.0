@@ -7,7 +7,7 @@ const Projects = () => {
 
     useEffect(() => {
         const fetchProjects = async () => {
-            const apiUrl = "https://portfolio2-0-fz2l.onrender.comg"
+            const apiUrl = "https://portfolio2-0-fz2l.onrender.com"
             try {
                 const response = await fetch(`${apiUrl}/api/projects`);
                 const data = await response.json();
