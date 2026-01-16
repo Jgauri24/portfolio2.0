@@ -7,7 +7,7 @@ const Projects = () => {
 
     useEffect(() => {
         const fetchProjects = async () => {
-            const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5001';
+            const apiUrl = "https://portfolio2-0-fz2l.onrender.comg"
             try {
                 const response = await fetch(`${apiUrl}/api/projects`);
                 const data = await response.json();

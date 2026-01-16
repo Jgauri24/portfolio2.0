@@ -10,7 +10,7 @@ const Contact = () => {
         message: ''
     });
 
-    const [status, setStatus] = useState('idle'); // idle, sending, success, error
+    const [status, setStatus] = useState('idle'); 
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -20,7 +20,7 @@ const Contact = () => {
         e.preventDefault();
         setStatus('sending');
 
-        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5001';
+            const apiUrl = "https://portfolio2-0-fz2l.onrender.com"
 
         try {
             const response = await fetch(`${apiUrl}/api/contact`, {
