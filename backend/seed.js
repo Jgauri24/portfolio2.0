@@ -17,15 +17,6 @@ const projects = [
         github: 'https://github.com/Jgauri24/happenix',
         live: 'https://happenix.vercel.app',
         imageColor: '#87A96B'
-    },
-    {
-        title: 'Fintech Ledger',
-        category: 'Blockchain & Security',
-        description: 'High-throughput immutable ledger for cross-border payments with integrated fraud detection algorithms and real-time transaction monitoring.',
-        tags: ['Go', 'PostgreSQL', 'Solidity', 'gRPC', 'Redis'],
-        github: 'https://github.com/Jgauri24',
-        live: '#',
-        imageColor: '#4A90E2'
     }
 ];
 
