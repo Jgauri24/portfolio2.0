@@ -17,7 +17,26 @@ const projects = [
         github: 'https://github.com/Jgauri24/happenix',
         live: 'https://happenix.vercel.app',
         imageColor: '#87A96B'
-    }
+    },{
+  title: 'Vantage',
+  category: 'Full-Stack Web Application',
+  description:
+    'Vantage is a premium full-stack service marketplace that facilitates professional engagements with secure, milestone-based payments and real-time collaboration.',
+  tags: [
+    'React',
+    'Vite',
+    'Tailwind CSS',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'JWT',
+    'Socket.io',
+    'Google OAuth 2.0'
+  ],
+  github: 'https://github.com/Jgauri24/Vantage',
+  live: "https://vantage-beryl.vercel.app",
+  imageColor: '#406db5ff'
+}
 ];
 
 const seedDB = async () => {
