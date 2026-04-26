@@ -75,15 +75,15 @@ const About = () => {
                     </h2>
 
                     <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', lineHeight: '1.7', marginBottom: 'var(--space-md)' }}>
-                        I’m Gauri Jindal, a full-stack developer with a strong foundation in the MERN stack and a passion for building scalable, production-ready web applications. Over the past 2+ years of coding, I’ve solved 200+ DSA problems and worked across 10+ technologies, which has shaped the way I think about systems, performance, and product impact.
+                        I'm Gauri Jindal, a full-stack developer and GenAI enthusiast with a strong foundation in the MERN stack and a growing expertise in Generative AI, LLM-based systems, and agentic workflows. Over the past 2+ years of coding, I've solved 200+ DSA problems and worked across 10+ technologies, which has shaped the way I think about systems, performance, and product impact.
                     </p>
 
                     <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', lineHeight: '1.7', marginBottom: 'var(--space-md)' }}>
-                        My engineering mindset starts with a simple principle — understand the problem deeply before writing the first line of code. Whether I’m optimizing backend logic, designing intuitive user experiences, or experimenting with AI/ML, I focus on writing clean, maintainable code that grows with the product.
+                        My engineering mindset starts with a simple principle — understand the problem deeply before writing the first line of code. Whether I'm building scalable full-stack applications, designing intelligent AI chatbots, or creating agentic AI systems with LangChain and LangGraph, I focus on writing clean, maintainable code that grows with the product.
                     </p>
 
                     <p style={{ fontSize: '1rem', color: 'var(--text-dim)', lineHeight: '1.7', marginBottom: 'var(--space-lg)' }}>
-                        I love challenges that force me to think algorithmically, collaborate like an engineer, and deliver like an owner. Currently, I’m specializing in high-performance applications and intelligent systems.
+                        I love challenges that force me to think algorithmically, collaborate like an engineer, and deliver like an owner. Currently, I'm specializing in high-performance applications, GenAI-powered solutions, and intelligent systems that bridge the gap between AI and real-world impact.
                     </p>
 
                     <motion.p
@@ -93,7 +93,7 @@ const About = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.5 }}
                     >
-                        If it scales, performs well, and actually solves a real problem, I’m all in.
+                        If it scales, performs well, and actually solves a real problem, I'm all in.
                     </motion.p>
                 </motion.div>
             </div>

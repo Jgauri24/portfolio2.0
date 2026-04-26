@@ -809,26 +809,81 @@ body {
     box-shadow: 0 10px 20px rgba(135, 169, 107, 0.3);
 }
 
-@media (max-width: 768px) {
-    .grid-2 {
-        grid-template-columns: 1fr;
-    }
-    
-    .project-row {
-        grid-template-columns: 1fr;
-        gap: var(--space-lg);
-    }
+
+
+/* Project Category Tabs */
+.project-tabs {
+    display: flex;
+    gap: 12px;
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
 }
 
-@media (max-width: 968px) {
-    .project-row, .project-row:nth-child(even) {
-        grid-template-columns: 1fr;
-        direction: ltr;
-        gap: var(--space-lg);
-    }
-    .project-preview-card {
-        height: 250px;
-    }
+.project-tab {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: inherit;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.project-tab:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.project-tab.active {
+    color: white;
+    background: rgba(135, 169, 107, 0.15);
+    border: 1px solid rgba(135, 169, 107, 0.3);
+}
+
+.tab-active-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--accent-gradient);
+    border-radius: 1px;
+}
+
+/* Project Category Badge */
+.project-category-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(135, 169, 107, 0.08);
+    border: 1px solid rgba(135, 169, 107, 0.2);
+    color: var(--accent-main);
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    width: fit-content;
+}
+
+/* No Projects Message */
+.no-projects-msg {
+    text-align: center;
+    padding: var(--space-2xl) 0;
+    color: var(--text-dim);
+    font-size: 1.1rem;
 }
 
 .main-footer {
@@ -840,4 +895,347 @@ body {
     text-align: center;
     color: var(--text-secondary);
     font-size: 0.9rem;
+}
+
+/* ============================================ */
+/*          COMPREHENSIVE RESPONSIVE            */
+/* ============================================ */
+
+/* --- Large Tablets / Small Desktops (max 1024px) --- */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+        padding: 0 var(--space-md);
+    }
+
+    .heading-lg {
+        font-size: clamp(2rem, 6vw, 3.5rem);
+    }
+
+    .heading-md {
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+}
+
+/* --- Tablets (max 768px) --- */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: auto;
+        padding-top: 140px;
+        padding-bottom: 60px;
+    }
+
+    .hero-subtitle-new {
+        font-size: 0.95rem;
+        padding: 0 var(--space-sm);
+    }
+
+    .hero-social-links {
+        margin-top: var(--space-lg);
+        gap: 12px;
+    }
+
+    .social-circle {
+        width: 44px;
+        height: 44px;
+    }
+
+    .tech-badge {
+        padding: 10px 20px;
+        font-size: 0.7rem;
+        margin-bottom: 40px;
+    }
+
+    .journey-timeline {
+        margin-top: 32px;
+        padding-left: 24px;
+    }
+
+    .journey-role {
+        font-size: 1.25rem !important;
+    }
+
+    .journey-item {
+        margin-bottom: 40px;
+    }
+
+    .brutal-tag {
+        padding: 8px 18px;
+        font-size: 0.95rem;
+        margin: 0 10px;
+        box-shadow: 4px 4px 0px black;
+    }
+
+    .project-title-new {
+        font-size: 1.75rem;
+    }
+
+    .project-desc-new {
+        font-size: 1rem;
+    }
+
+    .btn-demo, .btn-code {
+        padding: 10px 18px;
+        font-size: 0.85rem;
+    }
+
+    .project-tabs {
+        gap: 8px;
+        padding: 4px;
+    }
+
+    .project-tab {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+}
+
+/* --- Mobile (max 480px) --- */
+@media (max-width: 480px) {
+    :root {
+        --space-xl: 40px;
+        --space-2xl: 64px;
+    }
+
+    .hero-section {
+        padding-top: 120px;
+        padding-bottom: 40px;
+    }
+
+    .bg-portfolio-text {
+        font-size: clamp(2.5rem, 16vw, 5rem);
+    }
+
+    .fg-name-text {
+        font-size: clamp(2.5rem, 14vw, 5rem);
+    }
+
+    .hero-subtitle-new {
+        font-size: 0.85rem;
+        line-height: 1.6;
+        padding: 0 var(--space-xs);
+    }
+
+    .hero-subtitle-new br {
+        display: none;
+    }
+
+    .hero-social-links {
+        margin-top: var(--space-md);
+        gap: 10px;
+    }
+
+    .social-circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-circle svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .heading-md {
+        font-size: 1.5rem;
+        margin-bottom: var(--space-lg);
+    }
+
+    .heading-lg {
+        font-size: 2rem;
+    }
+
+    .tech-badge {
+        padding: 8px 16px;
+        font-size: 0.65rem;
+        margin-bottom: 24px;
+        letter-spacing: 0.1em;
+    }
+
+    .journey-timeline {
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+
+    .journey-role {
+        font-size: 1rem !important;
+    }
+
+    .journey-date {
+        font-size: 0.85rem;
+    }
+
+    .journey-dot {
+        left: -21px;
+        width: 8px;
+        height: 8px;
+    }
+
+    .journey-item {
+        margin-bottom: 32px;
+    }
+
+    .brutal-tag {
+        padding: 6px 14px;
+        font-size: 0.8rem;
+        margin: 0 6px;
+        border-width: 2px;
+        box-shadow: 3px 3px 0px black;
+    }
+
+    .marquee-wrapper {
+        gap: var(--space-sm);
+        padding: var(--space-sm) 0;
+    }
+
+    .project-row, .project-row:nth-child(even) {
+        grid-template-columns: 1fr;
+        direction: ltr;
+        gap: var(--space-md);
+    }
+
+    .project-preview-card {
+        height: 200px;
+    }
+
+    .project-title-new {
+        font-size: 1.5rem;
+    }
+
+    .project-desc-new {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .tag-pill {
+        padding: 4px 10px;
+        font-size: 0.7rem;
+    }
+
+    .project-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-demo, .btn-code {
+        justify-content: center;
+        padding: 12px;
+        font-size: 0.85rem;
+        width: 100%;
+    }
+
+    .project-tabs {
+        flex-direction: row;
+        gap: 6px;
+        padding: 4px;
+        width: 100%;
+    }
+
+    .project-tab {
+        flex: 1;
+        justify-content: center;
+        padding: 10px 12px;
+        font-size: 0.8rem;
+    }
+
+    .contact-card {
+        padding: var(--space-md);
+        border-radius: 16px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: var(--space-sm);
+    }
+
+    .form-input, .form-input-styled {
+        padding: 12px 14px;
+        font-size: 0.9rem;
+    }
+
+    .submit-btn-gradient {
+        padding: 14px;
+        font-size: 0.9rem;
+    }
+
+    .social-links-grid {
+        flex-wrap: wrap;
+    }
+
+    .nav-pill {
+        padding: 4px;
+    }
+
+    .nav-link {
+        padding: 6px 10px;
+        font-size: 0.7rem;
+    }
+
+    .avatar {
+        width: 28px;
+        height: 28px;
+        margin-right: 4px;
+    }
+
+    .nav-wrapper {
+        top: 16px;
+    }
+
+    .custom-cursor, .custom-cursor-outline {
+        display: none !important;
+    }
+
+    * {
+        cursor: auto !important;
+    }
+}
+
+/* --- Very Small Mobile (max 360px) --- */
+@media (max-width: 360px) {
+    .nav-link {
+        padding: 5px 8px;
+        font-size: 0.65rem;
+    }
+
+    .avatar {
+        display: none;
+    }
+
+    .heading-md {
+        font-size: 1.3rem;
+    }
+
+    .project-title-new {
+        font-size: 1.25rem;
+    }
+
+    .bg-portfolio-text {
+        font-size: clamp(2rem, 14vw, 4rem);
+    }
+
+    .fg-name-text {
+        font-size: clamp(2rem, 12vw, 4rem);
+    }
 }

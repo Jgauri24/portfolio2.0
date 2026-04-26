@@ -12,6 +12,12 @@ const Skills = () => {
         "Postman", "Pandas", "NumPy", "JavaScript", "HTML", "CSS"
     ];
 
+    const row3 = [
+        "LangChain", "LangGraph", "Prompt Engineering", "RAG",
+        "Agentic AI", "LLM Agents", "Streamlit", "GenAI",
+        "Hugging Face", "Vector DBs", "OpenAI API", "ReAct Patterns"
+    ];
+
     
     const MarqueeRow = ({ items, direction = 1, speed = 20 }) => {
 
@@ -55,6 +61,7 @@ const Skills = () => {
             <div className="marquee-wrapper">
                 <MarqueeRow items={row1} direction={1} speed={25} />
                 <MarqueeRow items={row2} direction={-1} speed={30} />
+                <MarqueeRow items={row3} direction={1} speed={22} />
             </div>
         </section>
     );
